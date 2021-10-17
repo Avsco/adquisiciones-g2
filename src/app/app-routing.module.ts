@@ -7,6 +7,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./home-page/home-page.module').then((m) => m.HomePageModule),
   },
+  {
+    path: 'provider',
+    loadChildren: () =>
+      import('./provider/provider-routing.module').then(
+        (m) => m.ProviderRoutingModule
+      ),
+  },
 ];
 
 @NgModule({
