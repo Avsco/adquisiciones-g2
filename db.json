@@ -1,1 +1,26 @@
-{}
+{
+  "providers": [
+    {
+      "code": "1",
+      "name": "Juanito",
+      "items": [
+        {
+          "providerItemCode": "tomate-1",
+          "itemCode": "tomate",
+          "price": 0.5,
+          "unidad": {
+            "code": "kl",
+            "name": "Kilogramo"
+          }
+        }
+      ]
+    }
+  ],
+  "measureUnit": [
+    {
+      "measureUnitCode": "kl",
+      "name": "Kilogramo",
+      "description": "Unidad de masa"
+    }
+  ]
+}
