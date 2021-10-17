@@ -1,0 +1,8 @@
+<header class="header">
+  <h2 class="header__title">Adquisiciones</h2>
+  <ul class="header__list">
+    <li *ngFor="let route of routes()">
+      <a [routerLink]="route.route">{{ route.name }}</a>
+    </li>
+  </ul>
+</header>

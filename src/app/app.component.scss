@@ -1,0 +1,22 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 70px minmax(calc(100vh - 110px), auto) 40px;
+  align-items: stretch;
+  justify-content: stretch;
+
+  &__header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__body {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  &__footer {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}
