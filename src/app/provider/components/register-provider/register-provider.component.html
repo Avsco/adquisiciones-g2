@@ -1,1 +1,13 @@
-<p>register-provider works!</p>
+<h1>Registrar Proveedores</h1>
+
+<form [formGroup]="providerForm" (ngSubmit)="onSubmit()">
+  <label for="code">Codigo</label>
+  <input id="code" type="text" formControlName="code" />
+
+  <label for="name">Nombre</label>
+  <input id="name" type="text" formControlName="name" />
+
+  <button type="submit">
+    {{ optionalProvider ? "Actualizar" : "Registar" }}
+  </button>
+</form>

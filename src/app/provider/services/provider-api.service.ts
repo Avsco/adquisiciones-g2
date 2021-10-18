@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 
 import { provider } from '../interfaces';
 
+type id = number | undefined | string | null;
+
 @Injectable({
   providedIn: 'any',
 })
@@ -16,7 +18,7 @@ export class ProviderApiService {
     return this.http.get<provider[]>(this.BASE_URL);
   }
 
-  findProviderById(id: number | undefined): Observable<provider> {
+  findProviderById(id: id): Observable<provider> {
     return this.http.get<provider>(this.BASE_URL + id);
   }
 
@@ -24,14 +26,11 @@ export class ProviderApiService {
     return this.http.post<provider>(this.BASE_URL, provider);
   }
 
-  updateProvider(
-    id: number | undefined,
-    provider: provider
-  ): Observable<provider> {
+  updateProvider(id: id, provider: provider): Observable<provider> {
     return this.http.put<provider>(this.BASE_URL + id, provider);
   }
 
-  deleteProvider(id: number | undefined): Observable<provider> {
+  deleteProvider(id: id): Observable<provider> {
     return this.http.delete<provider>(this.BASE_URL + id);
   }
 }

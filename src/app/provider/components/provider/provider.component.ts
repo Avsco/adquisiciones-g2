@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { provider } from '../../interfaces';
+import { ProviderApiService } from '../../services/provider-api.service';
 
 @Component({
   selector: 'app-provider',
@@ -6,7 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./provider.component.scss'],
 })
 export class ProviderComponent implements OnInit {
-  constructor() {}
+  providers!: provider[];
+  constructor(private servicerProvider: ProviderApiService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.fetchData();
+  }
+
+  fetchData() {
+    this.servicerProvider.getProviders().subscribe((data) => {
+      this.providers = data;
+    });
+  }
+
+  deleteProvider(id: number | undefined) {
+    this.servicerProvider.deleteProvider(id).subscribe(() => {
+      this.fetchData();
+    });
+  }
 }
