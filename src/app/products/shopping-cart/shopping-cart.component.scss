@@ -1,0 +1,28 @@
+.cart-products{
+  display: flex;
+}
+
+.cart-image img{
+  max-width: 180px;
+}
+
+.cart-info .add{
+  background-color: rgb(116, 221, 116);
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+}
+
+.cart-info .remove{
+  background-color: rgb(216, 130, 130);
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+}
+
+.finalize{
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+}

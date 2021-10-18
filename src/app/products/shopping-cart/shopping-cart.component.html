@@ -1,0 +1,18 @@
+
+<h2>Carrito</h2>
+<div class="cart-products" *ngFor="let product of order.products">
+  <div class="cart-image">
+    <img [src]="product.product.image" alt="">
+  </div>
+  <div class="cart-info">
+    <h3>{{product.product.name}}</h3>
+    <p>{{product.product.price}}</p>
+    <p>{{product.cantidad}}</p>
+    <button class="add" (click)=addProduct(product.product)> + </button>
+    <button class="remove" (click)=removeProduct(product.product)> - </button>
+
+  </div>
+
+</div>
+
+<button class="finalize"> Finalizar Compra </button>
