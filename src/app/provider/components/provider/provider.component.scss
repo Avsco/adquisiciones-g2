@@ -1,0 +1,43 @@
+.provider {
+  height: 100%;
+  padding: 1rem;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    a {
+      @extend %btn;
+    }
+  }
+
+  h3 {
+    margin-left: 1rem;
+    display: inline;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__actions {
+    > * {
+      @extend %btn;
+    }
+  }
+}
+
+%btn {
+  all: unset;
+  font-family: inherit;
+  margin-left: 1rem;
+  background-color: #111;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+}

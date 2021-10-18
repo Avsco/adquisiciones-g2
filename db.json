@@ -1,1 +1,72 @@
-{}
+{
+  "providers": [
+    {
+      "id": 1,
+      "code": "1",
+      "name": "Juanito",
+      "items": [
+        {
+          "id": 1,
+          "itemCode": "312",
+          "name": "Tomate",
+          "category": "category",
+          "measureUnit": {
+            "code": "kl",
+            "name": "Kilogramo"
+          },
+          "providerItemCode": "1",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "code": "start",
+      "name": "Hilari",
+      "items": [
+        {
+          "id": 1,
+          "itemCode": "312",
+          "name": "Tomate",
+          "category": "category",
+          "measureUnit": {
+            "code": "kl",
+            "name": "Kilogramo"
+          },
+          "providerItemCode": "start1",
+          "price": "10"
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "measureUnits": [
+    {
+      "id": 1,
+      "measureUnitCode": "kl",
+      "name": "Kilogramo",
+      "description": "Unidad de masa"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "itemCode": "312",
+      "name": "Tomate",
+      "category": "category",
+      "measureUnit": {
+        "code": "kl",
+        "name": "Kilogramo"
+      }
+    },
+    {
+      "id": 2,
+      "itemCode": "123",
+      "name": "Lechuga",
+      "category": "category",
+      "measureUnit": {
+        "code": "u",
+        "name": "unidades"
+      }
+    }
+  ]
+}
