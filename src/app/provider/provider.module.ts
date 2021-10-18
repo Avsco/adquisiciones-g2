@@ -15,4 +15,4 @@ import { ProviderRoutingModule } from './provider-routing.module';
   ],
   imports: [CommonModule, ProviderRoutingModule],
 })
-export class PoviderModule {}
+export class ProviderModule {}

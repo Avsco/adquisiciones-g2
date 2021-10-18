@@ -10,9 +10,7 @@ const routes: Routes = [
   {
     path: 'provider',
     loadChildren: () =>
-      import('./provider/provider-routing.module').then(
-        (m) => m.ProviderRoutingModule
-      ),
+      import('./provider/provider.module').then((m) => m.ProviderModule),
   },
 ];
 
