@@ -1,0 +1,19 @@
+<div class="provider">
+  <header>
+    <h1>Proveedores</h1>
+    <a routerLink="create">Registar Proveedores</a>
+  </header>
+  <main>
+    <div class="provider__item" *ngFor="let provider of providers">
+      <div>
+        <span>{{ provider.code }}</span>
+        <h3>{{ provider.name }}</h3>
+      </div>
+      <div class="provider__actions">
+        <a [routerLink]="[provider.id, 'product']"> Administar productos </a>
+        <a [routerLink]="['edit', provider.id]">Editar</a>
+        <button (click)="deleteProvider(provider.id)">Borrar</button>
+      </div>
+    </div>
+  </main>
+</div>

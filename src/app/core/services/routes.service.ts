@@ -14,6 +14,14 @@ export class RoutesService {
       name: 'Home',
       route: '',
     },
+    {
+      name: 'Provedores',
+      route: 'provider',
+    },
+    {
+      name: 'Products',
+      route: 'products',
+    }
   ];
   constructor() {}
 }
